@@ -72,6 +72,9 @@
     <Compile Include="CarModel4.xaml.cs">
       <DependentUpon>CarModel4.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmCar.xaml.cs">
+      <DependentUpon>ConfirmCar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="JohnMays.xaml.cs">
       <DependentUpon>JohnMays.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CarModel4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfirmCar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,6 +197,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="red and grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="red and brown.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blue and grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blue and brown.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

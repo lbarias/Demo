@@ -23,7 +23,7 @@ namespace Demo
         public JohnMays()
         {
             InitializeComponent();
-            if (LogIn.user == "Tom") {
+            if (LogIn.user == "2222222222") {
                 NewCar.IsEnabled = false;
                // PreviousCar.IsEnabled = false;
             }

@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Demo"
-             mc:Ignorable="d" Width="525.163" Height="356.616">
+             mc:Ignorable="d" Width="517.354" Height="322.777">
     <Grid Background="BlanchedAlmond" Height="321" Width="519">
         <TextBlock HorizontalAlignment="Left" Margin="174,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Choose Make of "/><Run Text="Automobile"/></TextBlock>
         <Button x:Name="honda" Content="Honda" HorizontalAlignment="Left" Margin="73,118,0,0" VerticalAlignment="Top" Width="75" Click="hondaclick"/>

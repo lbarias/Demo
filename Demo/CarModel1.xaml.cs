@@ -20,6 +20,7 @@ namespace Demo
     /// </summary>
     public partial class CarModel1 : UserControl
     {
+        public static String car1 = "";
         public CarModel1()
         {
             InitializeComponent();
@@ -31,9 +32,30 @@ namespace Demo
             {
                 MainWindow.switchToBlueandBrown();
             }
-            else if (Grey.IsChecked == true){
+            else if (Blue.IsChecked == true && Grey.IsChecked == true){
                 MainWindow.switchToBlueandGrey();
             }
+        }
+
+        private void cancelclick(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToJohnMaysMainView();
+        }
+
+        private void backbutton(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToNewCarMainView();
+        }
+
+        private void greyis(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToRedandGrey();
+        }
+
+        private void redandbrown(object sender, RoutedEventArgs e)
+        {
+            car1 = "Make: Honda" + System.Environment.NewLine + "Model: X100" + System.Environment.NewLine + "Exterior Colour: Red" + System.Environment.NewLine + "Interior: Brown";
+            MainWindow.switchToConfirmCar();
         }
     }
 }

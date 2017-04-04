@@ -89,22 +89,27 @@ namespace Demo
         }
         public static void switchToBlueandBrown()
         {
-            CarModel1 c = new CarModel1();
+            CarModel3 c = new CarModel3();
             m.switchTo(c);
         }
         public static void switchToBlueandGrey()
         {
-            CarModel2 c = new CarModel2();
+            CarModel4 c = new CarModel4();
             m.switchTo(c);
         }
         public static void switchToRedandGrey()
         {
-            CarModel3 c = new CarModel3();
+            CarModel2 c = new CarModel2();
             m.switchTo(c);
         }
         public static void switchToRedandBrown()
         {
-            CarModel4 c = new CarModel4();
+            CarModel1 c = new CarModel1();
+            m.switchTo(c);
+        }
+        public static void switchToConfirmCar()
+        {
+            ConfirmCar c = new ConfirmCar();
             m.switchTo(c);
         }
     }

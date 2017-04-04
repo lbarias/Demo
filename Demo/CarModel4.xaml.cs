@@ -20,9 +20,36 @@ namespace Demo
     /// </summary>
     public partial class CarModel4 : UserControl
     {
+        public static String car4 = "";
         public CarModel4()
         {
             InitializeComponent();
+        }
+
+        private void redchecked(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToRedandGrey();
+        }
+
+        private void brownchecked(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToBlueandBrown();
+        }
+
+        private void cancel_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToJohnMaysMainView();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToNewCarMainView();
+        }
+
+        private void blueandgrey(object sender, RoutedEventArgs e)
+        {
+            car4 = "Make: Honda" + System.Environment.NewLine + "Model: X100" + System.Environment.NewLine + "Exterior Colour: Blue" + System.Environment.NewLine + "Interior: Grey";
+            MainWindow.switchToConfirmCar();
         }
     }
 }
